@@ -34,7 +34,7 @@ public class Program4{
     System.out.println("Amount: " + ammount);
         }
         public static void main(String[] args) {
-            Resort x = new Resort();
+            Program4 x = new Program4();
             x.Getinfo();
             x.Display();
 
