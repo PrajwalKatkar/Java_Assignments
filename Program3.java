@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-class CARRENTAL {
+class Problem3 {
     int CarId;
     String CarType;
     float Rent;
 
     void GetCar(int id, String type) {
         CarId = id;
-        CarType = type.toLowerCase(); 
+        CarType = type.toLowerCase();
     }
 
     float GetRent() {
@@ -20,7 +20,8 @@ class CARRENTAL {
         else if (CarType.equals("suv")) {
             Rent = 2500;
         }
-       }
+        return Rent;
+    }
 
     void ShowCar() {
         System.out.println("Car ID: " + CarId);
@@ -28,10 +29,10 @@ class CARRENTAL {
         System.out.println("Rent: " + Rent);
     }
 
-    public static void Program3(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        CARRENTAL c = new CARRENTAL();
+        Problem3 c = new Problem3();
 
         System.out.print("Enter Car ID: ");
         int id = sc.nextInt();
