@@ -12,7 +12,7 @@ class Person {
     }
 }
 
-public class Program1 {
+public class Problem1 {
     public static void main(String[] args) {
 
         Person p1 = new Person("Prajwal", 20);
